@@ -1,0 +1,120 @@
+:root {
+    --clr-white: 0, 0%, 100%;
+    --clr-light-gray: 212, 45%, 89%;
+    --clr-grayish-blue: 220, 15%, 55%;
+    --clr-dark-blue: 218, 44%, 22%;
+    --ff-sans-serif: sans-serif;
+}
+
+
+/*-----------------------------------------*/
+/*- RESET ---------------------------------*/
+/*-----------------------------------------*/
+
+/* Box sizing */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+    margin: 0
+}
+
+/* Setup the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make forms easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+*,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+
+/*-----------------------------------------*/
+/*- RESET ---------------------------------*/
+/*-----------------------------------------*/
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    row-gap: var(--row-gap, 2em);
+}
+
+.bg-light {
+    background-color: hsl(var(--clr-light-gray));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-gray {
+    color: hsl(var(--clr-grayish-blue));
+}
+
+.container {
+    padding: 1.2em;
+    background-color: hsl(var(--clr-white));
+    width: max(0px, 400px);
+}
+
+.font-size-500 {
+    font-size: 1.6rem;
+}
+
+.font-size-400 {
+    font-size: 1.2rem;
+}
+
+.border-radius-2 {
+    border-radius: 1.2em;
+}
+
+.border-radius-1 {
+    border-radius: 0.7em;
+}
+
+.ff-sans-serif {
+    font-family: var(--ff-sans-serif);
+}
+
+.container > * {
+    margin-bottom: 1.5rem;
+}
